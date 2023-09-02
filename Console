@@ -1,0 +1,23 @@
+ static void Main(string[] args)
+        {
+            double yazili1, yazili2, yazili3, ortalama;
+            Console.Write("1. Yazılı : ");
+            yazili1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("2. Yazılı : ");
+            yazili2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("3. Yazılı : ");
+            yazili3 = Convert.ToDouble(Console.ReadLine());
+ 
+            ortalama = (yazili1 + yazili2 + yazili3) / 3;
+            Console.WriteLine("Ortalamanız : " + ortalama);
+ 
+            if(ortalama>=50)
+            {
+                Console.WriteLine("Geçtiniz");
+            }
+            else
+            {
+                Console.WriteLine("Kaldınız");
+            }
+            Console.ReadKey();
+        }
